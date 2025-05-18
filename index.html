@@ -286,6 +286,40 @@ font-family: "Poetsen One", sans-serif;
 */
 
 
+	/* Estilo base del footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 100;
+font-family: calibri;
+ box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+/* Enlace dentro del footer */
+.footer a {
+  color:  #ccff15 ;
+  text-decoration: none;
+  font-family: calibri;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo: ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
 
 
 
@@ -320,6 +354,15 @@ font-family: "Poetsen One", sans-serif;
     <img src="estante2.png" alt="Repisa" class="shelf"/>
   </div>
 </div>
+
+	  
+
+<footer class="footer" style="font-family: calibri;">
+  <p>2025 - Copyright: <a href="https://www.instagram.com/alfreinformatica" target="_blank">www.instagram.com/alfreinformatica</a></p>
+</footer>
+
+
+	  
   </div>
 
   <!-- SwiperJS JS -->
@@ -379,5 +422,8 @@ font-family: "Poetsen One", sans-serif;
 
 	  
   </script>
+
+
+	
 </body>
 </html>

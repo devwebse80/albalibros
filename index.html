@@ -346,6 +346,29 @@ font-family: "Poetsen One", sans-serif;
         },
       },
     });
+
+
+
+
+    // Selecciona todos los elementos <a> con la clase swiper-slide
+    const enlaces = document.querySelectorAll('a.swiper-slide');
+
+    enlaces.forEach(function(enlace, index) {
+      enlace.addEventListener('click', function(event) {
+        event.preventDefault(); // evita que el enlace recargue la página
+        alert('Hiciste clic en el libro ' + (index + 1));
+      });
+    });
+  
+
+
+
+
+
+
+
+
+	  
   </script>
 </body>
 </html>

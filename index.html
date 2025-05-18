@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+<style>
+	
+section {
+  padding: 5rem 9%;
+}
+
+
+
+.home {
+  padding: 5rem 9%;
+}
+
+.home .row {
+  display:flex;
+  align-items: center;
+flex-wrap: wrap;
+gap:1.5rem;
+
+}
+
+.home .row .content{
+ flex:1 1 42rem;
+
+}
+
+
+.home .row .books-slider{
+ flex:1 1 42rem;
+ text-align: center;
+ margin-top: 2rem;
+
+}
+
+.home .row .books-slider a img{
+ height: 16rem;
+
+}
+
+.home .row .books-slider a:hover img{
+ transform: scale(.9);
+
+}
+
+
+.home .row .books-slider .stand{
+width: 100%;
+margin-top: -2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+	
+
+
+<section class="home" id="home">
+	
+<div class="row">
+	
+<div class="content">
+
+<h3>dasdasdada</h3>
+
+</div>
+
+
+
+<div class="swiper books-slider">
+	
+<div class="swiper-wrapper">
+
+
+<a href=""  class="swiper-slide"><img src="sillon.jpg" style ="width:152px;" alt=""></a>
+
+<a href="" class="swiper-slide"><img src="cafe2.jpg" style ="width:152px;" alt=""></a>
+
+<a href="" class="swiper-slide"><img src="relato.png" style ="width:152px;" alt=""></a>
+
+<a href=""  class="swiper-slide"><img src="150.jpg" style ="width:152px;" alt=""></a>
+
+</div>
+
+
+<img src="estante.png" style ="width:450px;" alt="" class="stand">
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<script>
+	
+ 
+   var swiper = new Swiper(".books-slider", {
+        loop: true,  // Cambiado de "loop:true;" a "loop: true,"
+        centeredSlides: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slider con Repisa</title>
+
+  <!-- SwiperJS CSS CDN -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .left h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .left p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .left button {
+      padding: 12px 25px;
+      background: #14a44d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .right {
+      flex: 1;
+      position: relative;
+      min-width: 300px;
+    }
+
+    .shelf {
+      width: 80%;
+      height: auto;
+      display: block;
+    }
+
+    .swiper .books-slider{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .swiper-slide img {
+      width: 150px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .swiper-slide img {
+        width: 150px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Upto 75% Off</h1>
+      <p>
+        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Magnam Deserunt
+        Nostrum Accusamus. Nam Alias Sit Necessitatibus, Aliquid Ex Minima At!
+      </p>
+      <button>Shop Now</button>
+    </div>
+
+    <div class="right">
+     
+      <!-- Swiper -->
+      <div class="swiper books-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="relato.png" alt="Libro 1" /></div>
+          <div class="swiper-slide"><img src="sillon.jpg" alt="Libro 2" /></div>
+          <div class="swiper-slide"><img src="150.jpg" alt="Libro 3" /></div>
+          <div class="swiper-slide"><img src="cafe2.jpg" alt="Libro 4" /></div>
+        </div>
+      </div>
+
+<!-- <img src="estante.png" alt="Repisa" class="shelf" />-->
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <!-- SwiperJS CDN JS -->
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+      var swiper = new Swiper(".books-slider", {
+        loop: true,  
+        
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+           },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
+</body>
+</html>

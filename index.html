@@ -325,6 +325,27 @@ font-family: "Poetsen One", sans-serif;
   <!-- SwiperJS JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
+
+
+ // Espera a que todo el DOM esté cargado
+  document.addEventListener('DOMContentLoaded', function() {
+    // Selecciona todos los elementos <a> con la clase swiper-slide
+    const enlaces = document.querySelectorAll('a.swiper-slide');
+
+    enlaces.forEach(function(enlace, index) {
+      enlace.addEventListener('click', function(event) {
+        event.preventDefault(); // evita que el enlace recargue la página
+        alert('Hiciste clic en el libro ' + (index + 1));
+      });
+    });
+  });
+
+
+
+
+
+
+	  
     new Swiper('.swiper', {
       loop: true,
 	  autoplay: {
@@ -347,19 +368,6 @@ font-family: "Poetsen One", sans-serif;
       },
     });
 
-
-
-
-    // Selecciona todos los elementos <a> con la clase swiper-slide
-    const enlaces = document.querySelectorAll('a.swiper-slide');
-
-    enlaces.forEach(function(enlace, index) {
-      enlace.addEventListener('click', function(event) {
-        event.preventDefault(); // evita que el enlace recargue la página
-        alert('Hiciste clic en el libro ' + (index + 1));
-      });
-    });
-  
 
 
 

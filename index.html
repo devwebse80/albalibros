@@ -28,7 +28,7 @@
       background-color: #f0f0f0;
 
 font-family: "Poetsen One", sans-serif;
-  font-weight: 800;
+  /*font-weight: 800;*/
   font-style: normal;
 
 	  
@@ -297,6 +297,7 @@ font-family: "Poetsen One", sans-serif;
 
 
 	/* Estilo base del footer */
+/*
 .footer {
   position: fixed;
   bottom: 0;
@@ -312,7 +313,7 @@ font-family: calibri;
  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); 
 }
 
-/* Enlace dentro del footer */
+
 .footer a {
   color:  #ccff15 ;
   text-decoration: none;
@@ -323,6 +324,40 @@ font-family: calibri;
   text-decoration: underline;
 }
 
+
+*/
+
+
+
+.footer-bottom {
+position:fixed;
+   left:0px;
+   bottom:0px;
+   height:40px;
+   width:100%;
+   padding-top: 5px;
+   background:#0e1a40;
+text-align: center;
+box-shadow: 0 0 20px 0;
+}
+
+
+.footer-bottom a , #p1{
+  color:  #ccff15 ;
+  font-family: Tahoma; 
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+	  
+
+
+	  
 /* Responsivo: ajuste para pantallas pequeñas */
 @media (max-width: 720px) {
   .footer {
@@ -564,12 +599,16 @@ font-family: calibri;
 </div>
 
 	  
-
+<!--
 <footer class="footer" style="font-family: calibri;">
   <p>2025 - Copyright: <a href="https://www.instagram.com/alfreinformatica" target="_blank">www.instagram.com/alfreinformatica</a></p>
 </footer>
+-->
 
-
+	<div class="footer-bottom">
+                <p id="p1">&copy; 2025 - Copyright: <a href="https://www.instagram.com/alfreinformatica" target="_blank">www.instagram.com/alfreinformatica</a></p>
+            </div>
+  
 	  
   </div>
 

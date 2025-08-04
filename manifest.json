@@ -1,6 +1,6 @@
 {
-    "short_name": "CodBarrasEAN8",
-    "name": "Generador codigos barras ean8",
+    "short_name": "albalibros",
+    "name": "albalibros",
     "icons":[
         {
             "src":"logo2.png",
@@ -8,10 +8,11 @@
             "type":"image/png"
         }
     ],
-    "start_url":"index.php",
+    "start_url":"index.html",
     "display": "standalone", 
     "background_color": "#F5F5F8",
     "theme_color": "#F5F5F8",
     "orientation": "portrait",
-    "categories": ["ean","barcode"]
+    "categories": ["libros","pdf"]
+
 }

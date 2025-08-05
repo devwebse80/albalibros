@@ -1,19 +1,21 @@
 {
-    "short_name": "albalibros",
-    "name": "albalibros",
-    "icons":[
-        {
-            "src":"logo2.png",
-            "sizes":"192x192",
-            "type":"image/png"
-        }
-    ],
-    "start_url":"./index.html",
-    "display": "standalone", 
-    "background_color": "#F5F5F8",
-    "theme_color": "#F5F5F8",
-    "orientation": "portrait",
-    "categories": ["libros","pdf"]
-
+  "name": "albalibros",
+  "short_name": "albalibros",
+  "description": "albalibros",
+  "theme_color": "#abd1f2",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "./",
+  "start_url": "index.html",
+  "lang": "es-AR",
+  "icons": [
+    {
+      "src": "./logo2.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
 }
+
 

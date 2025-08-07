@@ -636,38 +636,20 @@ box-shadow: 0 0 20px 0;
   <script>
 
 
- // Espera a que todo el DOM esté cargado
-  document.addEventListener('DOMContentLoaded', function() {
 
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/sw.js")
-      .then(registration => console.log("SW registrado!"))
-      .catch(err => console.log("Error al registrar SW:", err));
-  });
-}
 
+
+  // Registrar Service Worker (requerido para PWA)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker registrado'))
+        .catch(err => console.log('Error:', err));
+    }
 
 
 
 
-
-
-	  
-    // Selecciona todos los elementos <a> con la clase swiper-slide
- /*
-	  const enlaces = document.querySelectorAll('a.swiper-slide');
-
-    enlaces.forEach(function(enlace, index) {
-      enlace.addEventListener('click', function(event) {
-        event.preventDefault(); // evita que el enlace recargue la página
-        //alert('Hiciste clic en el libro ' + (index + 1));
-	       alert('Opcion No Programada Todavia!!! - IG: alfreinformatica');
-      });
-    });
-    
-    */
-  });
+ 
 
 
 
@@ -712,6 +694,7 @@ if ("serviceWorker" in navigator) {
 	
 </body>
 </html>
+
 
 
 

@@ -638,6 +638,22 @@ box-shadow: 0 0 20px 0;
 
  // Espera a que todo el DOM esté cargado
   document.addEventListener('DOMContentLoaded', function() {
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(registration => console.log("SW registrado!"))
+      .catch(err => console.log("Error al registrar SW:", err));
+  });
+}
+
+
+
+
+
+
+
+	  
     // Selecciona todos los elementos <a> con la clase swiper-slide
  /*
 	  const enlaces = document.querySelectorAll('a.swiper-slide');
@@ -696,6 +712,7 @@ box-shadow: 0 0 20px 0;
 	
 </body>
 </html>
+
 
 
 
